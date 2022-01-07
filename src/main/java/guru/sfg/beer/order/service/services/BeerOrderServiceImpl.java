@@ -43,7 +43,7 @@ public class BeerOrderServiceImpl implements BeerOrderService {
 
     private final BeerOrderRepository beerOrderRepository;
     private final CustomerRepository customerRepository;
-    private final BeerOrderMapper beerOrderMapper;
+    private BeerOrderMapper beerOrderMapper;
     private final ApplicationEventPublisher publisher;
 
     public BeerOrderServiceImpl(BeerOrderRepository beerOrderRepository,
